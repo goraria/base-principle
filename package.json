@@ -1,6 +1,6 @@
 {
   "name": "@gorth/principle",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -101,8 +101,7 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",
     "express-session": "^1.19.0",
-    "hono": "^4.13.8",
-    "zod": "^4.6.5"
+    "hono": "^4.13.8"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.6",

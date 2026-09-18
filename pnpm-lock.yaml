@@ -62,9 +62,6 @@ importers:
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
-      zod:
-        specifier: ^4.6.5
-        version: 4.6.5
     devDependencies:
       '@types/body-parser':
         specifier: ^1.19.6
