@@ -1,6 +1,6 @@
 {
-  "name": "@gorth/mechanism",
-  "version": "2.2.10",
+  "name": "@gorth/principle",
+  "version": "3.0.0",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goraria/base-mechanism.git"
+    "url": "git+https://github.com/goraria/base-principle.git"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -29,6 +29,11 @@
       "types": "./dist/cores/*.d.ts",
       "import": "./dist/cores/*.js",
       "require": "./dist/cores/*.cjs"
+    },
+    "./cores/*/*": {
+      "types": "./dist/cores/*/*.d.ts",
+      "import": "./dist/cores/*/*.js",
+      "require": "./dist/cores/*/*.cjs"
     },
     "./configs/*": {
       "types": "./dist/configs/*.d.ts",
@@ -50,6 +55,9 @@
     "*": {
       "cores/*": [
         "dist/cores/*.d.ts"
+      ],
+      "cores/*/*": [
+        "dist/cores/*/*.d.ts"
       ],
       "lib/*": [
         "dist/lib/*.d.ts"
@@ -74,6 +82,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@hono/zod-openapi": "^1.6.3",
+    "@hono/zod-validator": "^0.9.1",
     "body-parser": "^2.3.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
@@ -87,11 +97,12 @@
     "qrcode": "^1.5.4"
   },
   "peerDependencies": {
-    "dotenv": "^17.4.2",
+    "dotenv": "^18.0.0",
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",
     "express-session": "^1.19.0",
-    "vite": "^8.3.0"
+    "hono": "^4.13.8",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.6",
@@ -102,11 +113,11 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/morgan": "^1.9.10",
     "@types/multer": "^2.2.0",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.1",
     "@types/nodemailer": "^8.0.2",
     "@types/qrcode": "^1.5.6",
     "eslint": "^9.39.5",
-    "prettier": "^3.9.7",
+    "prettier": "^3.9.8",
     "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
