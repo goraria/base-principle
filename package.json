@@ -1,6 +1,6 @@
 {
   "name": "@gorth/principle",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "",
   "type": "module",
   "author": "Gorthenburg",
@@ -76,13 +76,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown --minify --config-loader tsx",
-    "prepack": "bun run build",
+    "build": "tsdown --minify",
+    "prepack": "pnpm build",
     "dev": "tsdown src/index.ts src/cores/*.ts src/lib/*.ts --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "update": "bun update",
+    "update": "pnpm update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -99,9 +99,7 @@
     "nodemailer": "^10.0.10",
     "otplib": "^13.5.0",
     "picocolors": "^1.1.1",
-    "qrcode": "^1.5.4",
-    "tsdown": "^0.23.0",
-    "tsx": "^4.23.15"
+    "qrcode": "^1.5.4"
   },
   "peerDependencies": {
     "dotenv": "^18.0.3",
@@ -125,8 +123,9 @@
     "@types/nodemailer": "^8.0.2",
     "@types/qrcode": "^1.5.6",
     "eslint": "^9.39.5",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
+    "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
-  "packageManager": "bun@1.4.2"
+  "packageManager": "pnpm@10.33.4"
 }
