@@ -77,7 +77,7 @@
   ],
   "scripts": {
     "build": "tsdown --minify --config-loader tsx",
-    "prepare": "bun run build",
+    "prepack": "bun run build",
     "dev": "tsdown src/index.ts src/cores/*.ts src/lib/*.ts --format esm,cjs --dts --out-dir dist --watch",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
