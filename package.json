@@ -99,7 +99,8 @@
     "nodemailer": "^10.0.10",
     "otplib": "^13.5.0",
     "picocolors": "^1.1.1",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "tsdown": "^0.23.0"
   },
   "peerDependencies": {
     "dotenv": "^18.0.3",
@@ -124,7 +125,6 @@
     "@types/qrcode": "^1.5.6",
     "eslint": "^9.39.5",
     "prettier": "^3.9.8",
-    "tsdown": "^0.23.0",
     "typescript": "^5.9.3"
   },
   "packageManager": "bun@1.4.2"

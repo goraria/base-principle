@@ -19,6 +19,7 @@
         "otplib": "^13.5.0",
         "picocolors": "^1.1.1",
         "qrcode": "^1.5.4",
+        "tsdown": "^0.23.0",
       },
       "devDependencies": {
         "@types/body-parser": "^1.19.6",
@@ -34,7 +35,6 @@
         "@types/qrcode": "^1.5.6",
         "eslint": "^9.39.5",
         "prettier": "^3.9.8",
-        "tsdown": "^0.23.0",
         "typescript": "^5.9.3",
       },
       "peerDependencies": {
